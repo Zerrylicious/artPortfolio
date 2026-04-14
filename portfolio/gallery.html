@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - My Art Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">My Portfolio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="gallery-section py-5">
+            <div class="container">
+                <h1 class="text-center mb-5">Gallery</h1>
+
+                <div class="d-flex justify-content-center gap-2 flex-wrap mb-5">
+                    <button type="button" class="btn btn-outline-dark filter-btn active" data-filter="all">All Works</button>
+                    <button type="button" class="btn btn-outline-dark filter-btn" data-filter="acrylic">Acrylic</button>
+                    <button type="button" class="btn btn-outline-dark filter-btn" data-filter="oil">Oil</button>
+                    <button type="button" class="btn btn-outline-dark filter-btn" data-filter="mixed">Mixed Media</button>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 gallery-item" data-category="acrylic">
+                        <div class="card gallery-card border-0 shadow-sm h-100 overflow-hidden">
+                            <div class="gallery-image position-relative">
+                                <img src="img/img1.jpeg" alt="Morning Light" class="card-img-top">
+                                <div class="gallery-overlay position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-center p-3">
+                                    <h5>Morning Light</h5>
+                                    <p class="mb-0">Acrylic on Canvas | 80x60cm | 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 gallery-item" data-category="oil">
+                        <div class="card gallery-card border-0 shadow-sm h-100 overflow-hidden">
+                            <div class="gallery-image position-relative">
+                                <img src="img/img2.jpeg" alt="Urban Reflections" class="card-img-top">
+                                <div class="gallery-overlay position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-center p-3">
+                                    <h5>Urban Reflections</h5>
+                                    <p class="mb-0">Oil on Canvas | 100x80cm | 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 gallery-item" data-category="mixed">
+                        <div class="card gallery-card border-0 shadow-sm h-100 overflow-hidden">
+                            <div class="gallery-image position-relative">
+                                <img src="img/img3.jpeg" alt="Traditional Motifs" class="card-img-top">
+                                <div class="gallery-overlay position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-center p-3">
+                                    <h5>Traditional Motifs</h5>
+                                    <p class="mb-0">Mixed Media | 70x50cm | 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark text-white text-center py-4 mt-5">
+        <div class="container-fluid">
+            <p class="mb-0">&copy; 2026 My Art Portfolio. All rights reserved. | Institut Seni Indonesia</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
