@@ -19,66 +19,169 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link" href="about.html">About</a>
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link" href="#statement">About</a>
+                    <a class="nav-link" href="#bio">Bio</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <main>
-        <section class="hero">
+        <section id="home" class="hero">
             <div class="container">
-                <div class="row align-items-center justify-content-center min-vh-70">
-                    <div class="col-lg-8 text-center">
-                        <h1 class="hero-title display-3 mb-3">Welcome to My Art Gallery</h1>
-                        <p class="hero-subtitle fs-5 mb-2">Contemporary Fine Arts | Acrylic & Oil Paintings</p>
-                        <p class="hero-description text-muted mb-4">Student of Fine Arts (Seni Murni) at Institut Seni Indonesia</p>
-                        <a href="gallery.html" class="btn btn-primary btn-lg">View My Work</a>
-                        <div class="hero-divider mx-auto mt-4"></div>
+                <div class="row align-items-center justify-content-center min-vh-75 text-center">
+                    <div class="col-lg-8">
+                        <h1 class="hero-title display-3 mb-3">Hello, Im Melinda  painting with fabric, color, and everyday light.</h1>
+                        <p class="hero-subtitle fs-5 mb-4">A playful, casual showcase of textile mixed painting and pattern-led artworks.</p>
+                        <div class="hero-action d-flex flex-column flex-sm-row justify-content-center gap-3 mb-4">
+                            <a href="#portfolio" class="btn btn-primary btn-lg">Browse Gallery</a>
+                            <a href="#statement" class="btn btn-outline-dark btn-lg">Read the Story</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="featured-work bg-light py-5">
+        <section id="statement" class="artist-statement py-5">
             <div class="container">
-                <h2 class="text-center mb-5">Featured Work</h2>
+                <div class="row justify-content-center align-items-center gy-4">
+                    <div class="col-lg-7 statement-copy">
+                        <h2 class="mb-4">Artist Statement</h2>
+                        <p class="text-muted">Minat saya terhadap tekstil berawal dari kedekatannya dengan kehidupan sehari-hari, khususnya melalui pakaian dan berbagai material tekstil yang terus saya gunakan. Kehadiran yang berulang ini membuat saya memandang tekstil bukan sekadar sebagai objek fungsional, melainkan sebagai bagian dari pengalaman visual yang terbentuk dalam keseharian. Saya kemudian menghadirkan tekstil ke dalam konteks seni lukis untuk mengeksplorasi bagaimana material ini dapat dipahami sebagai bagian dari bahasa lukisan.</p>
+                        <p class="text-muted">Pendekatan ini berkembang melalui pengalaman saya dalam mata kuliah Alternative Textile, yang membuka perspektif baru terhadap medium. Dalam praktik saya, saya menggabungkan pendekatan melukis dengan tekstil melalui teknik textile mixed painting, dengan mengeksplorasi teknik resist seperti tie-dye atau jumputan, di mana pola dan tekstur terbentuk melalui proses pengikatan dan kemudian diproses menggunakan pewarna alami yang berasal dari indigofera. Pola yang dihasilkan tidak saya anggap sebagai hasil akhir, melainkan sebagai dasar yang kemudian saya respons lebih lanjut melalui intervensi lukisan manual pada permukaan tekstil.</p>
+                        <p class="text-muted">Proses ini menghasilkan bentuk-bentuk yang tidak sepenuhnya dapat saya kendalikan, di mana pola tekstil dan elemen lukisan saling berinteraksi serta menyatu dalam sebuah komposisi visual yang utuh.</p>
+                        <p class="text-muted">Melalui eksplorasi ini, saya memandang lukisan tidak hanya sebagai sesuatu yang dilihat, tetapi juga sebagai objek yang dapat digunakan, disentuh, dan berinteraksi dengan ruang serta kehidupan sehari-hari. Perspektif ini muncul dari pengamatan saya terhadap bagaimana lukisan sering kali terbatas pada kanvas sebagai objek visual semata, sehingga membatasi potensi interaksinya dengan kehidupan sehari-hari. Dengan menempatkan tekstil dalam kerangka seni lukis, praktik saya membuka kemungkinan alternatif dalam memahami lukisan sebagai bentuk yang lebih fleksibel, tidak sepenuhnya terikat pada format konvensionalnya, termasuk kemungkinan untuk dikenakan tanpa kehilangan pijakannya dalam seni rupa murni.</p>
+                    </div>
+                    <div class="col-lg-5 text-center">
+                        <div class="statement-image-wrapper mx-auto">
+                            <img src="img/img4.png" alt="Karya tekstil seniman" class="img-fluid rounded shadow-sm statement-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bio" class="bio-section py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2>About the Artist</h2>
+                    <p class="text-muted">A relaxed introduction to the artist behind the textures and color.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="bio-card p-4 p-lg-5 rounded-4 shadow-sm">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="bio-card-content">
+                                        <div class="bio-label mb-3"><i class="bi bi-person-badge"></i> Profil Seniman</div>
+                                        <p class="bio-name mb-3">Melinda Dwi Kharisma</p>
+                                        <p class="text-muted mb-3">Mahasiswa Seni Rupa, jurusan Lukis, Institut Seni Indonesia Yogyakarta (ISI Yogyakarta), angkatan 2023.</p>
+                                        <p class="text-muted mb-3">Melinda memulai praktiknya dengan lukisan minyak dan akrilik, kemudian memperluas karya menjadi textile mixed painting yang memadukan material, warna, dan motif sehari-hari.</p>
+                                        <p class="text-muted">Karyanya mengeksplorasi bagaimana lukisan dapat bersifat visual sekaligus taktil, menciptakan karya yang terasa hidup di ruang dan dalam kehidupan sehari-hari.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 text-center text-lg-end">
+                                    <div class="bio-image-wrapper mx-lg-auto">
+                                        <img src="img/imgPort.jpeg" alt="Potret seniman" class="img-fluid rounded-4 bio-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="highlights" class="highlights-section py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2>Exhibitions, Activities & Experience</h2>
+                    <p class="text-muted">A concise overview of key exhibitions, art activities, and professional experience from the MSR portfolio.</p>
+                </div>
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-4">
-                        <div class="card featured-card h-100 shadow-sm border-0">
-                            <div class="featured-image overflow-hidden">
-                                <img src="img/img1.jpeg" alt="Featured artwork" class="card-img-top">
-                            </div>
+                        <div class="achievement-card h-100 p-4 rounded-4 shadow-sm">
+                            <h5>Pameran</h5>
+                            <ul class="achievement-list list-unstyled mt-3 mb-0">
+                                <li><strong>The Little Things:</strong> Stamp Reimagined  Fajar Sidik Gallery (2025)</li>
+                                <li><strong>Who Am I:</strong> Journey of Becoming  Jogja Gallery</li>
+                                <li><strong>DCG #19</strong>  Yogyakarta Cultural Park</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="achievement-card h-100 p-4 rounded-4 shadow-sm">
+                            <h5>Aktivitas</h5>
+                            <ul class="achievement-list list-unstyled mt-3 mb-0">
+                                <li>Internship at Pendhapa Art Space Yogyakarta (Program, Administration)</li>
+                                <li>Gallery sitter for In Memoriam Zaenal Arifin & Lucia Hartini  Bentara Budaya Yogyakarta</li>
+                                <li>Database Division support for WHO AM I Exhibition  Jogja Gallery</li>
+                                <li>Gallery sitter for Presi Prokal: Saling Sapao  Jogja</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="achievement-card h-100 p-4 rounded-4 shadow-sm">
+                            <h5>Pengalaman</h5>
+                            <p class="text-muted mt-3 mb-0">Creative involvement at Monument of Yogyakarta's Return (Monjali), alongside a practice rooted in canvas-based painting, oil, and acrylic work.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-preview py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2>Gallery Preview</h2>
+                    <p class="text-muted">A curated gallery preview of selected works. Visit the full gallery page to explore the complete collection.</p>
+                    <p class="gallery-preview-note text-muted small mt-2">This preview is presented as a small exhibition wall  larger works and more artworks are available on the dedicated gallery page.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card portfolio-card h-100 border-0 shadow-sm overflow-hidden">
+                            <img src="img/img1.jpeg" alt="Morning Light" class="card-img-top">
                             <div class="card-body">
-                                <h5 class="card-title">Untitled Masterpiece</h5>
-                                <p class="card-text artwork-medium">Acrylic on Canvas | 2026</p>
+                                <h5 class="card-title">Cahaya Pagi</h5>
+                                <p class="card-text text-muted small">Studi tekstur tentang rutinitas harian melalui permukaan tekstil berlapis.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <div class="card featured-card h-100 shadow-sm border-0">
-                            <div class="featured-image overflow-hidden">
-                                <img src="img/img2.jpeg" alt="Featured artwork" class="card-img-top">
-                            </div>
+                        <div class="card portfolio-card h-100 border-0 shadow-sm overflow-hidden">
+                            <img src="img/img2.jpeg" alt="Urban Reflections" class="card-img-top">
                             <div class="card-body">
-                                <h5 class="card-title">Artistic Expression</h5>
-                                <p class="card-text artwork-medium">Oil on Canvas | 2026</p>
+                                <h5 class="card-title">Refleksi Kota</h5>
+                                <p class="card-text text-muted small">Karya atmosferik yang mengeksplorasi pergerakan antara kain dan cat.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <div class="card featured-card h-100 shadow-sm border-0">
-                            <div class="featured-image overflow-hidden">
-                                <img src="img/img3.jpeg" alt="Featured artwork" class="card-img-top">
-                            </div>
+                        <div class="card portfolio-card h-100 border-0 shadow-sm overflow-hidden">
+                            <img src="img/img3.jpeg" alt="Traditional Motifs" class="card-img-top">
                             <div class="card-body">
-                                <h5 class="card-title">Contemporary Vision</h5>
-                                <p class="card-text artwork-medium">Acrylic on Canvas | 2026</p>
+                                <h5 class="card-title">Motif Tradisional</h5>
+                                <p class="card-text text-muted small">Komposisi kontemplatif yang memadukan motif, tekstur, dan warna buatan tangan.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="gallery.html" class="btn btn-primary btn-lg">Explore the Full Gallery</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-cta py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2>Keep in Touch</h2>
+                        <p class="text-muted mb-4">Drop a note if you want to chat about exhibitions, collaborations, or new art ideas.</p>
+                        <a href="contact.html" class="btn btn-outline-dark btn-lg">Say Hello</a>
                     </div>
                 </div>
             </div>
