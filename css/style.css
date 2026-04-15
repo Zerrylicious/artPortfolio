@@ -262,6 +262,50 @@ a.link-accent:hover {
     object-fit: cover;
 }
 
+<<<<<<< HEAD
+=======
+/* Artistic Statement Images Layout */
+.statement-artistic-images {
+    position: relative;
+    height: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.statement-image-primary {
+    position: relative;
+    z-index: 2;
+    max-width: 280px;
+    width: 100%;
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease;
+    order: 1;
+}
+
+.statement-image-primary:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.statement-image-secondary {
+    position: relative;
+    z-index: 1;
+    max-width: 220px;
+    width: 100%;
+    transform: rotate(3deg);
+    transition: all 0.3s ease;
+    order: 2;
+    margin-top: -1rem;
+}
+
+.statement-image-secondary:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+>>>>>>> 01552c4 (final)
 .bio-image,
 .about-image img {
     width: 100%;
@@ -294,6 +338,28 @@ a.link-accent:hover {
     .portfolio-card .card-img-top {
         aspect-ratio: 3 / 2;
     }
+<<<<<<< HEAD
+=======
+
+    /* Responsive artistic images */
+    .statement-artistic-images {
+        min-height: 300px;
+        gap: 1rem;
+    }
+
+    .statement-image-primary {
+        max-width: 250px;
+        transform: rotate(0deg);
+        order: 1;
+    }
+
+    .statement-image-secondary {
+        max-width: 200px;
+        transform: rotate(0deg);
+        order: 2;
+        margin-top: 0;
+    }
+>>>>>>> 01552c4 (final)
 }
 
 .bio-card {
@@ -415,3 +481,177 @@ a.link-accent:hover {
         font-size: 1.25rem;
     }
 }
+<<<<<<< HEAD
+=======
+
+/* =====================
+   ARTWORK MODAL STYLES
+   ===================== */
+.artwork-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.artwork-modal-content {
+    background-color: #ffffff;
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.artwork-modal-close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: #666666;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+    transition: color 0.3s ease;
+}
+
+.artwork-modal-close:hover,
+.artwork-modal-close:focus {
+    color: #000000;
+}
+
+.artwork-modal-body {
+    padding: 2rem;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.image-zoom-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10001;
+    background-color: rgba(0, 0, 0, 0.95);
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.image-zoom-content {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-zoom-content img {
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 16px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+    cursor: zoom-out;
+}
+
+.artwork-modal-body img {
+    cursor: zoom-in;
+}
+
+.artwork-details h3 {
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.artwork-meta p {
+    color: var(--color-gray);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.artwork-meta p:first-child {
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+.artwork-description p {
+    line-height: 1.6;
+    color: var(--color-primary);
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .artwork-modal-content {
+        width: 95%;
+        margin: 10% auto;
+        max-height: 85vh;
+    }
+
+    .artwork-modal-body {
+        padding: 1.5rem;
+    }
+
+    .artwork-details h3 {
+        font-size: 1.5rem;
+    }
+
+    .row.g-4 {
+        --bs-gutter-x: 1rem;
+    }
+}
+
+/* Achievement list styling */
+.achievement-list {
+    font-size: 0.9rem;
+}
+
+.achievement-list .year-header {
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.achievement-list .year-header:first-child {
+    margin-top: 0;
+}
+
+.achievement-list ul {
+    padding-left: 0;
+}
+
+.achievement-list li {
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.achievement-list li small {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.8rem;
+}
+>>>>>>> 01552c4 (final)
