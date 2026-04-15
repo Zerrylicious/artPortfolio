@@ -49,26 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Basic validation
             if (name && email && subject && message) {
-<<<<<<< HEAD
-                // Show success message
-                const successMessage = document.getElementById('successMessage');
-                successMessage.style.display = 'block';
-
-                // Reset form
-                contactForm.reset();
-
-                // Hide success message after 5 seconds
-                setTimeout(function() {
-                    successMessage.style.display = 'none';
-                }, 5000);
-
-                // Log form data (for debugging)
-                console.log({
-                    name: name,
-                    email: email,
-                    subject: subject,
-                    message: message
-=======
                 const successMessage = document.getElementById('successMessage');
                 const submitButton = contactForm.querySelector('[type="submit"]');
                 const originalButtonText = submitButton.textContent;
@@ -106,7 +86,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     submitButton.textContent = originalButtonText;
                     submitButton.disabled = false;
                     alert('Oops! Something went wrong. Please try again later.');
->>>>>>> 01552c4 (final)
                 });
             } else {
                 alert('Please fill in all fields.');
@@ -139,8 +118,6 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 });
-<<<<<<< HEAD
-=======
 
 // ==========================================
 // ARTWORK MODAL FUNCTIONALITY
@@ -249,4 +226,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
->>>>>>> 01552c4 (final)

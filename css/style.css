@@ -262,8 +262,6 @@ a.link-accent:hover {
     object-fit: cover;
 }
 
-<<<<<<< HEAD
-=======
 /* Artistic Statement Images Layout */
 .statement-artistic-images {
     position: relative;
@@ -305,7 +303,6 @@ a.link-accent:hover {
     transform: rotate(0deg) scale(1.02);
 }
 
->>>>>>> 01552c4 (final)
 .bio-image,
 .about-image img {
     width: 100%;
@@ -338,8 +335,6 @@ a.link-accent:hover {
     .portfolio-card .card-img-top {
         aspect-ratio: 3 / 2;
     }
-<<<<<<< HEAD
-=======
 
     /* Responsive artistic images */
     .statement-artistic-images {
@@ -359,7 +354,6 @@ a.link-accent:hover {
         order: 2;
         margin-top: 0;
     }
->>>>>>> 01552c4 (final)
 }
 
 .bio-card {
@@ -481,8 +475,6 @@ a.link-accent:hover {
         font-size: 1.25rem;
     }
 }
-<<<<<<< HEAD
-=======
 
 /* =====================
    ARTWORK MODAL STYLES
@@ -654,4 +646,3 @@ a.link-accent:hover {
     margin-top: 0.25rem;
     font-size: 0.8rem;
 }
->>>>>>> 01552c4 (final)
